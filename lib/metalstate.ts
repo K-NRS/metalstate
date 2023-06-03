@@ -3,6 +3,7 @@ import { SetStateAction } from "react"
 export interface IMetal<T> {
   value: T
   listeners: Array<SetStateAction<T>>
+  props: { [key: string]: any }
   get: () => any
   set: (newValue: any) => IMetal<T>
   emit: () => void
@@ -11,7 +12,6 @@ export interface IMetal<T> {
   extend: <U extends object>(
     newSettings: U
   ) => IMetal<T> & U & { [key: string]: any }
-  [key: string]: any
 }
 
 export const createMetalState = <T>(initial: T): IMetal<T> => {
