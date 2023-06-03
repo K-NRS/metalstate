@@ -6,3 +6,7 @@ test
 docs
 examples
 coverage
+.github
+.prettierrc.json
+jest.config.js
+tsconfig.json

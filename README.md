@@ -1,8 +1,8 @@
 # MetalState
 
-![npm](https://img.shields.io/npm/v/metalstate)
-![Downloads](https://img.shields.io/npm/dm/metalstate)
-![GitHub Repo stars](https://img.shields.io/github/stars/K-NRS/wagmi-contracts?label=Github&style=social)
+![npm](https://img.shields.io/npm/v/@metalstate/core)
+![Downloads](https://img.shields.io/npm/dm/@metalstate/core)
+![GitHub Repo stars](https://img.shields.io/github/stars/K-NRS/metalstate)
 
 <div align='center'>
 🪨 MetalState is extra-ordinarily minimal and extendible, global state store for React and compatible with NextJS 13+.
