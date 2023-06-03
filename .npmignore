@@ -1,0 +1,8 @@
+lib
+node_modules
+test
+*.lock
+*.log
+docs
+examples
+coverage

@@ -1,0 +1,34 @@
+name: Run Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Run Tests
+        run: yarn test --coverage
+
+      - name: Generate coverage badge
+        uses: artiomtr/coverage-badge-action@v1
+        with:
+          lcov_file: "./coverage/lcov.info"
+          output_directory: "./coverage"
+          badge_name: "badge"
+
+      - name: Upload coverage badge
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-badge
+          path: ./coverage/badge.svg
