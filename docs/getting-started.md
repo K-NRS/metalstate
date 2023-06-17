@@ -7,13 +7,13 @@ This guide will walk you through the steps needed to install and start using Met
 Install MetalState using yarn:
 
 ```bash
-yarn add metalstate
+yarn add "@metalstate/core"
 ```
 
 Or with npm:
 
 ```bash
-npm install metalstate
+npm install "@metalstate/core"
 ```
 
 ## Setting up a State
@@ -23,7 +23,7 @@ Once you've installed `MetalState`, you can import it and use it to set up a sta
 Firstly, create your state using the `createMetalState` function:
 
 ```tsx
-import { createMetalState } from "metalstate"
+import { createMetalState } from "@metalstate/core"
 
 // Create a simple state with an initial value of 0
 const counterState = createMetalState(0)
@@ -36,7 +36,7 @@ This creates a new state with an initial value of 0.
 Then, use the `useMetalState` hook in your components to interact with the state:
 
 ```tsx
-import { useMetalState } from "metalstate"
+import { useMetalState } from "@metalstate/core"
 
 function Counter() {
   // Use the state in your component

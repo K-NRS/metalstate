@@ -45,7 +45,7 @@ Properties
 ### Usage
 
 ```tsx
-import { createMetalState } from "metalstate"
+import { createMetalState } from "@metalstate/core"
 
 const myState = createMetalState(initialValue)
 ```
@@ -59,7 +59,7 @@ Where initialValue can be any type, including a function that returns a value.
 ### Usage
 
 ```tsx
-import { useMetalState } from "metalstate"
+import { useMetalState } from "@metalstate/core"
 
 function MyComponent() {
   const [value, setValue, props] = useMetalState(myState)

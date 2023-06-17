@@ -5,7 +5,7 @@ Here are some practical examples of how to use MetalState in your React applicat
 ## Basic Counter Example
 
 ```tsx
-import { createMetalState, useMetalState } from "metalstate"
+import { createMetalState, useMetalState } from "@metalstate/core"
 
 // Create the state
 const counterState = createMetalState(0)
@@ -26,7 +26,7 @@ function CounterComponent() {
 ## Using Listeners outside of Component -- without useEffect
 
 ```tsx
-import { createMetalState, useMetalState } from "metalstate"
+import { createMetalState, useMetalState } from "@metalstate/core"
 
 // Create the state
 const counterState = createMetalState(0)
@@ -50,7 +50,7 @@ function CounterComponent() {
 ## Extending The State
 
 ```tsx
-import { createMetalState, useMetalState } from "metalstate"
+import { createMetalState, useMetalState } from "@metalstate/core"
 
 // Create and extend the state
 const counterState = createMetalState(0).extend({
